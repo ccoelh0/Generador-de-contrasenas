@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de contraseña</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="script.js" defer></script> -->
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Generador de contraseña</h1>
+    </div>
+    <div class="mensaje" id="mensajeCopiado" style="display: none">
+      <span>Contraseña copiada!</span>
+    </div>
+    <div class="pw-container">
+      <div class="pw-header">
+        <div class="pw">
+          <span id="pw">l823Zs78#Css09@</span>
+          <button id="copy">Copiar</button>
+        </div>
+      </div>
+      <div class="pw-body">
+        <h2 class="title">
+          ¿Qué características queres que tenga tu contraseña?
+        </h2>
+        <div class="form-control">
+          <label for="len">Cantidad de items</label>
+          <input id="len" value="15" type="number" min="5" max="30" />
+        </div>
+        <div class="form-control">
+          <label for="upper">Mayusculas</label>
+          <input id="upper" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="lower">Minisculas</label>
+          <input id="lower" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="number">Números</label>
+          <input id="number" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="symbol">Símbolos</label>
+          <input id="symbol" type="checkbox" />
+        </div>
+        <button class="generate" id="generate">Generar constraseña</button>
+      </div>
+    </div>
+    <!-- el atributo defer es para avisarle al navegador que el js se va aplicar cuando cargue todo el doc -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>
